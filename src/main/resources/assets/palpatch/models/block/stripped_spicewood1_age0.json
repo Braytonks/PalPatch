@@ -1,0 +1,23 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Bray was here :)",
+	"textures": {
+		"particle": "palpatch:block/stripped_spicewood_stalk",
+		"all": "palpatch:block/stripped_spicewood_stalk"
+	},
+	"elements": [
+		{
+			"from": [6.5, 0, 6.5],
+			"to": [9.5, 16, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.5, 0, -0.5]},
+			"faces": {
+				"north": {"uv": [0, 0, 3, 16], "texture": "#all"},
+				"east": {"uv": [0, 0, 3, 16], "texture": "#all"},
+				"south": {"uv": [0, 0, 3, 16], "texture": "#all"},
+				"west": {"uv": [0, 0, 3, 16], "texture": "#all"},
+				"up": {"uv": [13, 4, 16, 7], "texture": "#all", "cullface": "up"},
+				"down": {"uv": [13, 4, 16, 7], "texture": "#all", "cullface": "down"}
+			}
+		}
+	]
+}

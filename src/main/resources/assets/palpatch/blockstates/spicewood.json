@@ -1,0 +1,58 @@
+{
+  "multipart": [
+    {
+      "apply": [
+        {
+          "model": "palpatch:block/spicewood1_age0"
+        },
+        {
+          "model": "palpatch:block/spicewood2_age0"
+        },
+        {
+          "model": "palpatch:block/spicewood3_age0"
+        },
+        {
+          "model": "palpatch:block/spicewood4_age0"
+        }
+      ],
+      "when": {
+        "age": "0"
+      }
+    },
+    {
+      "apply": [
+        {
+          "model": "palpatch:block/spicewood1_age1"
+        },
+        {
+          "model": "palpatch:block/spicewood2_age1"
+        },
+        {
+          "model": "palpatch:block/spicewood3_age1"
+        },
+        {
+          "model": "palpatch:block/spicewood4_age1"
+        }
+      ],
+      "when": {
+        "age": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "palpatch:block/spicewood_small_leaves"
+      },
+      "when": {
+        "leaves": "small"
+      }
+    },
+    {
+      "apply": {
+        "model": "palpatch:block/spicewood_large_leaves"
+      },
+      "when": {
+        "leaves": "large"
+      }
+    }
+  ]
+}

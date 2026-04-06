@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "palpatch:block/cinderbark_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "palpatch:block/cinderbark_log"
+    },
+    "axis=z": {
+      "model": "palpatch:block/cinderbark_log",
+      "x": 90
+    }
+  }
+}

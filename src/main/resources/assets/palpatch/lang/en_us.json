@@ -1,0 +1,25 @@
+{
+  "itemgroup.palpatch.palette_patcher_items": "Palette Patcher Items",
+
+  "item.palpatch.spicewood_stick": "Spicewood",
+  "item.palpatch.spicewood_powder": "Spicewood Powder",
+  "item.palpatch.spicewood_sapling": "Spicewood Sapling",
+  "item.palpatch.cinderbark_sapling": "Cinderbark Sapling",
+
+  "block.palpatch.cinderbark_log": "Cinderbark Log",
+  "block.palpatch.cinderbark_wood": "Cinderbark Wood",
+  "block.palpatch.stripped_cinderbark_log": "Stripped Cinderbark Log",
+  "block.palpatch.stripped_cinderbark_wood": "Stripped Cinderbark Wood",
+  "block.palpatch.cinderbark_planks": "Cinderbark Planks",
+  "block.palpatch.sootweed": "Sootweed",
+
+  "block.palpatch.spicewood_block": "Block of Spicewood",
+  "block.palpatch.stripped_spicewood_block": "Block of Stripped Spicewood",
+  "block.palpatch.spicewood_planks": "Spicewood Planks",
+  "block.palpatch.stripped_spicewood_planks": "Stripped Spicewood Planks",
+  "block.palpatch.spice_block": "Block of Spice",
+  "block.palpatch.packed_spice": "Packed Spice",
+  "block.palpatch.spice_bricks": "Spice Bricks",
+
+  "block.palpatch.magic_block": "Magic Block"
+}

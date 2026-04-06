@@ -1,0 +1,7 @@
+{
+	"credit": "Bray was here :)",
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "palpatch:block/sootweed"
+	}
+}
