@@ -1,9 +1,9 @@
 {
 	"required": true,
-	"package": "bray.palpatch.mixin",
+	"package": "net.braytonks.palpatch",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-      "net.braytonks.palpatch.mixin.ExampleMixin"
+		"mixin.ExampleMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
