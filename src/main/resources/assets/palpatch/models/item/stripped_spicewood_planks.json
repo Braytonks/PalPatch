@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "palpatch:block/stripped_spicewood_planks"
-  }
-}

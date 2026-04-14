@@ -1,0 +1,6 @@
+{
+  "parent": "palpatch:block/template_beam_inventory",
+  "textures": {
+    "texture": "palpatch:block/stripped_spruce_beam"
+  }
+}

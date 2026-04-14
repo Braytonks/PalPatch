@@ -1,0 +1,6 @@
+{
+  "parent": "palpatch:block/template_beam_east",
+  "textures": {
+    "texture": "palpatch:block/jungle_beam"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "palpatch:block/stripped_cinderbark_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "palpatch:block/stripped_cinderbark_log"
+    },
+    "axis=z": {
+      "model": "palpatch:block/stripped_cinderbark_log_horizontal",
+      "x": 90
+    }
+  }
+}

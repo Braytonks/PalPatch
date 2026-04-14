@@ -1,0 +1,6 @@
+{
+  "parent": "palpatch:block/template_scrap3",
+  "textures": {
+    "texture": "minecraft:block/raw_iron_block"
+  }
+}

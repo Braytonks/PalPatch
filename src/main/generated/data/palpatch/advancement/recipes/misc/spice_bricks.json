@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_packed_spice": {
+      "conditions": {
+        "items": [
+          {
+            "items": "palpatch:packed_spice"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "palpatch:spice_bricks"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_packed_spice"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "palpatch:spice_bricks"
+    ]
+  }
+}

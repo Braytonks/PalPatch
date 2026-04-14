@@ -20,7 +20,7 @@ public class ModItems {
 //    public static final Item SPICEWOOD_STICK = registerItem("spicewood_stick",
 //            new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP, new Item.Settings()));
 
-    public static final Item SPICEWOOD_STICK = registerItem("spicewood_stick", new Item(new Item.Settings()));
+    public static final Item SPICEWOOD_STICK = registerItem("spicewood_stick", new AliasedBlockItem(ModBlocks.SPICEWOOD_SAPLING, new Item.Settings()));
 
     public static final Item SPICEWOOD_POWDER = registerItem("spicewood_powder", new Item(new Item.Settings()));
 

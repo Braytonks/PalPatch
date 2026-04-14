@@ -1,0 +1,6 @@
+{
+  "parent": "palpatch:block/template_scrap2",
+  "textures": {
+    "texture": "minecraft:block/raw_gold_block"
+  }
+}

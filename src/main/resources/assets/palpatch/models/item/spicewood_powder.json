@@ -1,7 +1,0 @@
-{
-	"credit": "Bray was here :)",
-	"parent": "minecraft:item/generated",
-	"textures": {
-		"layer0": "palpatch:item/spicewood_powder"
-	}
-}

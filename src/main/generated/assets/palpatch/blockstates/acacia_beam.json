@@ -1,0 +1,103 @@
+{
+  "variants": {
+    "axis=x,horiz=middle,vert=middle": {
+      "model": "palpatch:block/acacia_beam_center",
+      "y": 90
+    },
+    "axis=x,horiz=middle,vert=negative": {
+      "model": "palpatch:block/acacia_beam_south",
+      "y": 90
+    },
+    "axis=x,horiz=middle,vert=positive": {
+      "model": "palpatch:block/acacia_beam_north",
+      "y": 90
+    },
+    "axis=x,horiz=negative,vert=middle": {
+      "model": "palpatch:block/acacia_beam_east",
+      "y": 90
+    },
+    "axis=x,horiz=negative,vert=negative": {
+      "model": "palpatch:block/acacia_beam_se",
+      "y": 90
+    },
+    "axis=x,horiz=negative,vert=positive": {
+      "model": "palpatch:block/acacia_beam_ne",
+      "y": 90
+    },
+    "axis=x,horiz=positive,vert=middle": {
+      "model": "palpatch:block/acacia_beam_west",
+      "y": 90
+    },
+    "axis=x,horiz=positive,vert=negative": {
+      "model": "palpatch:block/acacia_beam_sw",
+      "y": 90
+    },
+    "axis=x,horiz=positive,vert=positive": {
+      "model": "palpatch:block/acacia_beam_nw",
+      "y": 90
+    },
+    "axis=y,horiz=middle,vert=middle": {
+      "model": "palpatch:block/acacia_beam_center",
+      "x": 90
+    },
+    "axis=y,horiz=middle,vert=negative": {
+      "model": "palpatch:block/acacia_beam_north",
+      "x": 90
+    },
+    "axis=y,horiz=middle,vert=positive": {
+      "model": "palpatch:block/acacia_beam_south",
+      "x": 90
+    },
+    "axis=y,horiz=negative,vert=middle": {
+      "model": "palpatch:block/acacia_beam_east",
+      "x": 90
+    },
+    "axis=y,horiz=negative,vert=negative": {
+      "model": "palpatch:block/acacia_beam_ne",
+      "x": 90
+    },
+    "axis=y,horiz=negative,vert=positive": {
+      "model": "palpatch:block/acacia_beam_se",
+      "x": 90
+    },
+    "axis=y,horiz=positive,vert=middle": {
+      "model": "palpatch:block/acacia_beam_west",
+      "x": 90
+    },
+    "axis=y,horiz=positive,vert=negative": {
+      "model": "palpatch:block/acacia_beam_nw",
+      "x": 90
+    },
+    "axis=y,horiz=positive,vert=positive": {
+      "model": "palpatch:block/acacia_beam_sw",
+      "x": 90
+    },
+    "axis=z,horiz=middle,vert=middle": {
+      "model": "palpatch:block/acacia_beam_center"
+    },
+    "axis=z,horiz=middle,vert=negative": {
+      "model": "palpatch:block/acacia_beam_south"
+    },
+    "axis=z,horiz=middle,vert=positive": {
+      "model": "palpatch:block/acacia_beam_north"
+    },
+    "axis=z,horiz=negative,vert=middle": {
+      "model": "palpatch:block/acacia_beam_east"
+    },
+    "axis=z,horiz=negative,vert=negative": {
+      "model": "palpatch:block/acacia_beam_se"
+    },
+    "axis=z,horiz=negative,vert=positive": {
+      "model": "palpatch:block/acacia_beam_ne"
+    },
+    "axis=z,horiz=positive,vert=middle": {
+      "model": "palpatch:block/acacia_beam_west"
+    },
+    "axis=z,horiz=positive,vert=negative": {
+      "model": "palpatch:block/acacia_beam_sw"
+    },
+    "axis=z,horiz=positive,vert=positive": {
+      "model": "palpatch:block/acacia_beam_nw"
+    }
+  }
+}

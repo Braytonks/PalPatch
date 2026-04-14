@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cinderbark_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "palpatch:cinderbark_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "palpatch:cinderbark_wood"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cinderbark_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "palpatch:cinderbark_wood"
+    ]
+  }
+}

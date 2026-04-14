@@ -1,0 +1,6 @@
+{
+  "parent": "palpatch:block/template_beam_center",
+  "textures": {
+    "texture": "palpatch:block/warped_beam"
+  }
+}

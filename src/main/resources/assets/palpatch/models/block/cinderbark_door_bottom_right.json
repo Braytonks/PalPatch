@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right",
+  "textures": {
+    "bottom": "palpatch:block/cinderbark_door_bottom",
+    "top": "palpatch:block/cinderbark_door_top"
+  }
+}

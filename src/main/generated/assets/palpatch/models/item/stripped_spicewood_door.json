@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "palpatch:item/stripped_spicewood_door"
+  }
+}

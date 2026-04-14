@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "palpatch:block/spicewood_block_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "palpatch:block/spicewood_block"
+    },
+    "axis=z": {
+      "model": "palpatch:block/spicewood_block_horizontal",
+      "x": 90
+    }
+  }
+}

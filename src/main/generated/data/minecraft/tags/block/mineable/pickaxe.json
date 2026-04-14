@@ -1,0 +1,10 @@
+{
+  "values": [
+    "palpatch:spice_bricks",
+    "palpatch:spice_brick_wall",
+    "palpatch:packed_spice",
+    "palpatch:ferrous_stone",
+    "palpatch:ferrous_cobblestone",
+    "palpatch:iron_scrap"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "palpatch:block/spicewood_block_top",
+    "side": "palpatch:block/spicewood_block"
+  }
+}

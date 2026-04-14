@@ -1,58 +1,43 @@
 {
   "multipart": [
-    {
+    {"when": { "age": "0", "stripped": "false" },
       "apply": [
-        {
-          "model": "palpatch:block/spicewood1_age0"
-        },
-        {
-          "model": "palpatch:block/spicewood2_age0"
-        },
-        {
-          "model": "palpatch:block/spicewood3_age0"
-        },
-        {
-          "model": "palpatch:block/spicewood4_age0"
-        }
-      ],
-      "when": {
-        "age": "0"
-      }
-    },
-    {
+        { "model": "palpatch:block/spicewood1_age0" },
+        { "model": "palpatch:block/spicewood2_age0" },
+        { "model": "palpatch:block/spicewood3_age0" }]},
+
+    {"when": { "age": "0", "stripped": "true" },
       "apply": [
-        {
-          "model": "palpatch:block/spicewood1_age1"
-        },
-        {
-          "model": "palpatch:block/spicewood2_age1"
-        },
-        {
-          "model": "palpatch:block/spicewood3_age1"
-        },
-        {
-          "model": "palpatch:block/spicewood4_age1"
-        }
-      ],
-      "when": {
-        "age": "1"
-      }
-    },
-    {
-      "apply": {
-        "model": "palpatch:block/spicewood_small_leaves"
-      },
-      "when": {
-        "leaves": "small"
-      }
-    },
-    {
-      "apply": {
-        "model": "palpatch:block/spicewood_large_leaves"
-      },
-      "when": {
-        "leaves": "large"
-      }
-    }
+        { "model": "palpatch:block/stripped_spicewood1_age0" },
+        { "model": "palpatch:block/stripped_spicewood2_age0" },
+        { "model": "palpatch:block/stripped_spicewood3_age0" }]},
+
+    {"when": { "age": "1", "stripped": "false" },
+      "apply": [
+        { "model": "palpatch:block/spicewood1_age1" },
+        { "model": "palpatch:block/spicewood2_age1" },
+        { "model": "palpatch:block/spicewood3_age1" } ] },
+
+    {"when": { "age": "1", "stripped": "true" },
+      "apply": [
+        { "model": "palpatch:block/stripped_spicewood1_age1" },
+        { "model": "palpatch:block/stripped_spicewood2_age1" },
+        { "model": "palpatch:block/stripped_spicewood3_age1" }]},
+
+    { "when": { "north": "leaflet", "stripped": "false" }, "apply": { "model": "palpatch:block/spicewood_leaflet", "y": 0 } },
+    { "when": { "north": "small", "stripped": "false" },   "apply": [ { "model": "palpatch:block/spicewood_small_leaves", "y": 0 }]},
+    { "when": { "north": "large", "stripped": "false" },   "apply": [ { "model": "palpatch:block/spicewood_large_leaves", "y": 0 }]},
+
+    { "when": { "east": "leaflet", "stripped": "false" }, "apply": { "model": "palpatch:block/spicewood_leaflet", "y": 90 } },
+    { "when": { "east": "small", "stripped": "false" },   "apply": [ { "model": "palpatch:block/spicewood_small_leaves", "y": 90 }]},
+    { "when": { "east": "large", "stripped": "false" },   "apply": [ { "model": "palpatch:block/spicewood_large_leaves", "y": 90 }]},
+
+    { "when": { "south": "leaflet", "stripped": "false" }, "apply": { "model": "palpatch:block/spicewood_leaflet", "y": 180 } },
+    { "when": { "south": "small", "stripped": "false" },   "apply": [ { "model": "palpatch:block/spicewood_small_leaves", "y": 180 }]},
+    { "when": { "south": "large", "stripped": "false" },   "apply": [ { "model": "palpatch:block/spicewood_large_leaves", "y": 180 }]},
+
+    { "when": { "west": "leaflet", "stripped": "false" }, "apply": { "model": "palpatch:block/spicewood_leaflet", "y": 270 } },
+    { "when": { "west": "small", "stripped": "false" },   "apply": [ { "model": "palpatch:block/spicewood_small_leaves", "y": 270 }]},
+    { "when": { "west": "large", "stripped": "false" },   "apply": [ { "model": "palpatch:block/spicewood_large_leaves", "y": 270 }]}
   ]
 }

@@ -2,7 +2,8 @@
 	"format_version": "1.21.11",
 	"credit": "Bray was here :)",
 	"textures": {
-		"all": "palpatch:block/stripped_spicewood_stalk"
+		"particle": "palpatch:block/spicewood_stalk",
+		"all": "palpatch:block/spicewood_stalk"
 	},
 	"elements": [
 		{
@@ -10,11 +11,11 @@
 			"to": [9.5, 16, 9.5],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-0.5, 0, -0.5]},
 			"faces": {
-				"north": {"uv": [8, 0, 11, 16], "texture": "#all"},
-				"east": {"uv": [8, 0, 11, 16], "texture": "#all"},
-				"south": {"uv": [8, 0, 11, 16], "texture": "#all"},
-				"west": {"uv": [8, 0, 11, 16], "texture": "#all"},
-				"up": {"uv": [13, 4, 16, 7], "texture": "#all", "cullface": "up"},
+				"north": {"uv": [6, 0, 9, 16], "texture": "#all"},
+				"east": {"uv": [6, 0, 9, 16], "texture": "#all"},
+				"south": {"uv": [6, 0, 9, 16], "texture": "#all"},
+				"west": {"uv": [6, 0, 9, 16], "texture": "#all"},
+				"up": {"uv": [13, 0, 16, 3], "texture": "#all", "cullface": "up"},
 				"down": {"uv": [13, 4, 16, 7], "texture": "#all", "cullface": "down"}
 			}
 		}

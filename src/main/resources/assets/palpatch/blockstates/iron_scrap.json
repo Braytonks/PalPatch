@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "count=1,direction=east": {
+      "model": "palpatch:block/iron_scrap1",
+      "y": 180
+    },
+    "count=1,direction=north": {
+      "model": "palpatch:block/iron_scrap1"
+    },
+    "count=1,direction=south": {
+      "model": "palpatch:block/iron_scrap1",
+      "y": 90
+    },
+    "count=1,direction=west": {
+      "model": "palpatch:block/iron_scrap1",
+      "y": 270
+    },
+    "count=2,direction=east": {
+      "model": "palpatch:block/iron_scrap2",
+      "y": 180
+    },
+    "count=2,direction=north": {
+      "model": "palpatch:block/iron_scrap2"
+    },
+    "count=2,direction=south": {
+      "model": "palpatch:block/iron_scrap2",
+      "y": 90
+    },
+    "count=2,direction=west": {
+      "model": "palpatch:block/iron_scrap2",
+      "y": 270
+    },
+    "count=3,direction=east": {
+      "model": "palpatch:block/iron_scrap3",
+      "y": 180
+    },
+    "count=3,direction=north": {
+      "model": "palpatch:block/iron_scrap3"
+    },
+    "count=3,direction=south": {
+      "model": "palpatch:block/iron_scrap3",
+      "y": 90
+    },
+    "count=3,direction=west": {
+      "model": "palpatch:block/iron_scrap3",
+      "y": 270
+    },
+    "count=4,direction=east": {
+      "model": "palpatch:block/iron_scrap4",
+      "y": 180
+    },
+    "count=4,direction=north": {
+      "model": "palpatch:block/iron_scrap4"
+    },
+    "count=4,direction=south": {
+      "model": "palpatch:block/iron_scrap4",
+      "y": 90
+    },
+    "count=4,direction=west": {
+      "model": "palpatch:block/iron_scrap4",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "palpatch:block/stripped_spicewood_planks",
+    "side": "palpatch:block/stripped_spicewood_planks",
+    "top": "palpatch:block/stripped_spicewood_planks"
+  }
+}

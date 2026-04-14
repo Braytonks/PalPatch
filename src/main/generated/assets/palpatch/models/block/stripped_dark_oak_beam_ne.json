@@ -1,0 +1,6 @@
+{
+  "parent": "palpatch:block/template_beam_ne",
+  "textures": {
+    "texture": "palpatch:block/stripped_dark_oak_beam"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "palpatch:block/cinderbark_slab"
+    },
+    "type=double": {
+      "model": "palpatch:block/cinderbark_planks"
+    },
+    "type=top": {
+      "model": "palpatch:block/cinderbark_slab_top"
+    }
+  }
+}

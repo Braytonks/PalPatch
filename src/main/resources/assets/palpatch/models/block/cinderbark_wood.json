@@ -1,8 +1,0 @@
-{
-	"credit": "Bray was here :)",
-	"parent": "minecraft:block/cube_column",
-	"textures": {
-		"end": "palpatch:block/cinderbark_log",
-		"side": "palpatch:block/cinderbark_log"
-	}
-}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stripped_cinderbark_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "palpatch:stripped_cinderbark_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "palpatch:stripped_cinderbark_wood"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stripped_cinderbark_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "palpatch:stripped_cinderbark_wood"
+    ]
+  }
+}

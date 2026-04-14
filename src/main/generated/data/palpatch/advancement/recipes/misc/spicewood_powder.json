@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_spicewood_stick": {
+      "conditions": {
+        "items": [
+          {
+            "items": "palpatch:spicewood_stick"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "palpatch:spicewood_powder"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_spicewood_stick"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "palpatch:spicewood_powder"
+    ]
+  }
+}

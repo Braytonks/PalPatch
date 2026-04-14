@@ -1,0 +1,6 @@
+{
+  "parent": "palpatch:block/template_beam_north",
+  "textures": {
+    "texture": "palpatch:block/acacia_beam"
+  }
+}

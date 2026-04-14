@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "spicewood_stick",
+  "ingredients": [
+    {
+      "item": "palpatch:stripped_spicewood_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "palpatch:spicewood_stick"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "palpatch:block/spicewood_sapling"
+  }
+}

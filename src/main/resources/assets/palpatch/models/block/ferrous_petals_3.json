@@ -1,0 +1,56 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Bray was here :)",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "palpatch:block/ferrous_petals",
+		"flowerbed": "palpatch:block/ferrous_petals",
+		"stem": "palpatch:block/ferrous_petals_stem"
+	},
+	"elements": [
+		{
+			"from": [8, 2, 8],
+			"to": [16, 2, 16],
+			"faces": {
+				"up": {"uv": [8, 8, 16, 16], "texture": "#flowerbed"},
+				"down": {"uv": [8, 16, 16, 8], "texture": "#flowerbed"}
+			}
+		},
+		{
+			"from": [18.65, 0, 1.9],
+			"to": [19.65, 2, 1.9],
+			"rotation": {"angle": -45, "axis": "y", "origin": [1.5, 0, 0.5]},
+			"faces": {
+				"north": {"uv": [0, 5, 1, 7], "texture": "#stem", "tintindex": 1},
+				"south": {"uv": [0, 5, 1, 7], "texture": "#stem", "tintindex": 1}
+			}
+		},
+		{
+			"from": [19.15, 0, 1.4],
+			"to": [19.15, 2, 2.4],
+			"rotation": {"angle": -45, "axis": "y", "origin": [1.5, 0, 0.5]},
+			"faces": {
+				"east": {"uv": [0, 5, 1, 7], "texture": "#stem", "tintindex": 1},
+				"west": {"uv": [0, 5, 1, 7], "texture": "#stem", "tintindex": 1}
+			}
+		},
+		{
+			"from": [14.4, 0, -0.5],
+			"to": [14.4, 2, 0.5],
+			"rotation": {"angle": -45, "axis": "y", "origin": [1, 0, 0]},
+			"faces": {
+				"east": {"uv": [0, 5, 1, 7], "texture": "#stem", "tintindex": 1},
+				"west": {"uv": [0, 5, 1, 7], "texture": "#stem", "tintindex": 1}
+			}
+		},
+		{
+			"from": [13.9, 0, 0],
+			"to": [14.9, 2, 0],
+			"rotation": {"angle": -45, "axis": "y", "origin": [1, 0, 0]},
+			"faces": {
+				"north": {"uv": [0, 5, 1, 7], "texture": "#stem", "tintindex": 1},
+				"south": {"uv": [0, 5, 1, 7], "texture": "#stem", "tintindex": 1}
+			}
+		}
+	]
+}

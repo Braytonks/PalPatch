@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_fence_gate_open",
+  "textures": {
+    "texture": "palpatch:block/stripped_spicewood_planks"
+  }
+}
