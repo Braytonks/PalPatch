@@ -52,7 +52,7 @@ public class PalPatch implements ModInitializer {
 						world.setBlockState(clickedPos, clickedState.with(OreScrapBlock.SCRAP_COUNT, currentCount + 1));
 						if (!player.getAbilities().creativeMode) stack.decrement(1);
 					}
-					return ActionResult.success(world.isClient);
+					return ActionResult.SUCCESS;
 				}
 			}
 
@@ -64,7 +64,7 @@ public class PalPatch implements ModInitializer {
 					world.playSound(null, clickedPos, net.minecraft.sound.SoundEvents.BLOCK_GRAVEL_PLACE, SoundCategory.BLOCKS, 0.5f, 1.2f);
 					if (!player.getAbilities().creativeMode) stack.decrement(1);
 				}
-				return ActionResult.success(world.isClient);
+				return ActionResult.SUCCESS;
 			}
 
 			return ActionResult.PASS;

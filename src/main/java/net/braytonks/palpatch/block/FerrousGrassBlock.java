@@ -34,7 +34,7 @@ public class FerrousGrassBlock extends GrassBlock {
     private static boolean canSurvive(BlockState state, WorldView world, BlockPos pos) {
         BlockPos blockPos = pos.up();
         BlockState blockState = world.getBlockState(blockPos);
-        return blockState.getOpacity(world, blockPos) < world.getMaxLightLevel();
+        return blockState.getOpacity() < 15;
     }
 
     private static boolean canSpread(BlockState state, WorldView world, BlockPos pos) {

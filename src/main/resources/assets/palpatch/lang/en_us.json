@@ -91,5 +91,12 @@
   "block.palpatch.copper_scrap": "Copper Scrap",
   "block.palpatch.gold_scrap": "Gold Scrap",
 
-  "block.palpatch.magic_block": "Magic Block"
+  "block.palpatch.magic_block": "Magic Block",
+
+  "tag.block.palpatch.cinderbark_logs": "Cinderbark Logs",
+  "tag.block.palpatch.spicewood_blocks": "Spicewood Blocks",
+  "tag.block.palpatch.ferrous_plantable_on": "Plantable on Ferrous Blocks",
+  "tag.item.palpatch.cinderbark_logs": "Cinderbark Logs",
+  "tag.item.palpatch.spicewood_blocks": "Spicewood Blocks",
+  "tag.item.palpatch.ferrous_plantable_on": "Plantable on Ferrous Blocks"
 }
