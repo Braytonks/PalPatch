@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "L": {
-      "item": "palpatch:stripped_cinderbark_log"
-    }
+    "L": "palpatch:stripped_cinderbark_log"
   },
   "pattern": [
     "LL",

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "palpatch:block/cinderbark_planks",
-    "side": "palpatch:block/cinderbark_planks",
-    "top": "palpatch:block/cinderbark_planks"
-  }
-}

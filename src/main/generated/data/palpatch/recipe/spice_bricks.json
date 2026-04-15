@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "palpatch:packed_spice"
-    }
+    "#": "palpatch:packed_spice"
   },
   "pattern": [
     "##",

@@ -1,6 +1,3 @@
 {
-  "parent": "palpatch:block/template_beam_inventory",
-  "textures": {
-    "texture": "palpatch:block/jungle_beam"
-  }
+  "parent": "palpatch:block/jungle_beam_inventory"
 }

@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/door_bottom_right_open",
-  "textures": {
-    "bottom": "palpatch:block/spicewood_door_bottom",
-    "top": "palpatch:block/spicewood_door_top"
-  }
-}

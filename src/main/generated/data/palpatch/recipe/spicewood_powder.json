@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "palpatch:spicewood_stick"
-    }
+    "palpatch:spicewood_stick"
   ],
   "result": {
     "count": 1,

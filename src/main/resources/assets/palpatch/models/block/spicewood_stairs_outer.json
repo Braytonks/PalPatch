@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "palpatch:block/spicewood_planks",
-    "side": "palpatch:block/spicewood_planks",
-    "top": "palpatch:block/spicewood_planks"
-  }
-}

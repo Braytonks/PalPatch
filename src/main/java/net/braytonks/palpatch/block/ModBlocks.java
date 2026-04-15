@@ -181,6 +181,11 @@ public class ModBlocks {
             Block::new,AbstractBlock.Settings.copy(Blocks.MUD_BRICKS));
     public static final Block SPICE_BRICK_WALL = registerBlock("spice_brick_wall",
             WallBlock::new,AbstractBlock.Settings.copy(Blocks.MUD_BRICK_WALL));
+    public static final Block SPICE_BRICK_STAIRS = registerBlock("spice_brick_stairs",
+            (settings) -> new StairsBlock(ModBlocks.SPICE_BRICKS.getDefaultState(), settings),
+            AbstractBlock.Settings.copy(MUD_BRICK_STAIRS));
+    public static final Block SPICE_BRICK_SLAB = registerBlock("spice_brick_slab",
+            SlabBlock::new,AbstractBlock.Settings.copy(MUD_BRICK_SLAB));
 
 
     // MODDED WOOD BEAMS
@@ -244,17 +249,17 @@ public class ModBlocks {
 
     // VANILLA ORES SCRAP BLOCKS
 
-    public static final Block IRON_SCRAP = registerItemlessBlock("iron_scrap",
-   OreScrapBlock::new,AbstractBlock.Settings.create()
-            .noCollision().nonOpaque().strength(0.5f).sounds(BlockSoundGroup.METAL).pistonBehavior(PistonBehavior.DESTROY));
-
-    public static final Block COPPER_SCRAP = registerItemlessBlock("copper_scrap",
-            OreScrapBlock::new,AbstractBlock.Settings.create()
-                    .noCollision().nonOpaque().strength(0.5f).sounds(BlockSoundGroup.COPPER).pistonBehavior(PistonBehavior.DESTROY));
-
-    public static final Block GOLD_SCRAP = registerItemlessBlock("gold_scrap",
-            OreScrapBlock::new,AbstractBlock.Settings.create()
-                    .noCollision().nonOpaque().strength(0.5f).sounds(BlockSoundGroup.NETHER_GOLD_ORE).pistonBehavior(PistonBehavior.DESTROY));
+//    public static final Block IRON_SCRAP = registerItemlessBlock("iron_scrap",
+//   OreScrapBlock::new,AbstractBlock.Settings.create()
+//            .noCollision().nonOpaque().strength(0.5f).sounds(BlockSoundGroup.METAL).pistonBehavior(PistonBehavior.DESTROY));
+//
+//    public static final Block COPPER_SCRAP = registerItemlessBlock("copper_scrap",
+//            OreScrapBlock::new,AbstractBlock.Settings.create()
+//                    .noCollision().nonOpaque().strength(0.5f).sounds(BlockSoundGroup.COPPER).pistonBehavior(PistonBehavior.DESTROY));
+//
+//    public static final Block GOLD_SCRAP = registerItemlessBlock("gold_scrap",
+//            OreScrapBlock::new,AbstractBlock.Settings.create()
+//                    .noCollision().nonOpaque().strength(0.5f).sounds(BlockSoundGroup.NETHER_GOLD_ORE).pistonBehavior(PistonBehavior.DESTROY));
 
     // FERROUS BLOCKS
 
@@ -293,6 +298,8 @@ public class ModBlocks {
         return Registry.register(Registries.BLOCK, blockKey, block);
     }
 
+
+
     // Register Itemless Blocks - things like Spicewood Saplings which are planted by a stick of Spicewood similar to Vanilla's Bamboo Sapling
 
     private static Block registerItemlessBlock(String name, Function<AbstractBlock.Settings, Block> factory, AbstractBlock.Settings settings) {
@@ -303,9 +310,9 @@ public class ModBlocks {
     // Helper called by registerBlock
 
     private static void registerBlockItem(String name, Block block) {
-        RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(PalPatch.MOD_ID, name));
-        BlockItem blockItem = new BlockItem(block, new Item.Settings().registryKey(itemKey));
-        Registry.register(Registries.ITEM, itemKey, blockItem);
+        Registry.register(Registries.ITEM, Identifier.of(PalPatch.MOD_ID, name),
+                new BlockItem(block, new Item.Settings().useBlockPrefixedTranslationKey()
+                        .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(PalPatch.MOD_ID, name)))));
     }
 
 

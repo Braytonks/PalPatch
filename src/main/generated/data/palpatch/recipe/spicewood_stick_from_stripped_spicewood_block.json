@@ -3,9 +3,7 @@
   "category": "misc",
   "group": "spicewood_stick",
   "ingredients": [
-    {
-      "item": "palpatch:stripped_spicewood_block"
-    }
+    "palpatch:stripped_spicewood_block"
   ],
   "result": {
     "count": 9,

@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "L": {
-      "item": "palpatch:cinderbark_log"
-    }
+    "L": "palpatch:cinderbark_log"
   },
   "pattern": [
     "LL",
