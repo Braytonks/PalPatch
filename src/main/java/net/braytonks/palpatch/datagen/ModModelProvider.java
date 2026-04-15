@@ -4,25 +4,21 @@ import net.braytonks.palpatch.block.BeamBlock;
 import net.braytonks.palpatch.block.ModBlocks;
 import net.braytonks.palpatch.block.OreScrapBlock;
 import net.braytonks.palpatch.item.ModItems;
+import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Block;
-import net.minecraft.data.client.*;
+import net.minecraft.client.data.*;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Direction;
-
 import java.util.Optional;
 
-import static net.minecraft.data.client.ModelIds.getItemModelId;
-import static net.minecraft.data.client.Models.GENERATED;
-import static net.minecraft.data.client.TextureMap.layer0;
+import static net.minecraft.client.data.TextureMap.layer0;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
         super(output);
     }
-
 
     // DEFINE BEAM MODEL TEMPLATES
     public static final Model TEMPLATE_BEAM_CENTER = new Model(Optional.of(Identifier.of("palpatch", "block/template_beam_center")), Optional.empty(), TextureKey.TEXTURE);
@@ -141,7 +137,16 @@ public class ModModelProvider extends FabricModelProvider {
     }
 
 
-    // This will be where we register all the blocks that we want Blockstates and models for
+    private void registerCrossBlock(BlockStateModelGenerator gen, Block block) {
+        Identifier blockModelId = ModelIds.getBlockModelId(block);
+
+        Models.CROSS.upload(blockModelId, TextureMap.cross(block), gen.modelCollector);
+
+        gen.blockStateCollector.accept(BlockStateModelGenerator.createSingletonBlockState(block, blockModelId));
+    }
+
+
+    // This will be where we register all the blocks that we want Block states and models for
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerLog(ModBlocks.CINDERBARK_LOG)
@@ -159,26 +164,60 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSingleton(ModBlocks.CINDERBARK_LEAVES, TexturedModel.LEAVES);
         blockStateModelGenerator.registerSingleton(ModBlocks.SPICEWOOD_LEAVES, TexturedModel.LEAVES);
 
-        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.CINDERBARK_SAPLING,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+        registerCrossBlock(blockStateModelGenerator, ModBlocks.SPICEWOOD_SAPLING);
 
-        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.SPICEWOOD_SAPLING,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerMultifaceBlock(ModBlocks.SOOTWEED);
 
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CINDERBARK_PLANKS);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SPICEWOOD_PLANKS);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STRIPPED_SPICEWOOD_PLANKS);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.CINDERBARK_SAPLING, BlockStateModelGenerator.CrossType.NOT_TINTED);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.FERROUS_SHORT_GRASS, BlockStateModelGenerator.CrossType.NOT_TINTED);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CINDERBARK_PLANKS)
+                .stairs(ModBlocks.CINDERBARK_STAIRS)
+                .slab(ModBlocks.CINDERBARK_SLAB)
+                .fence(ModBlocks.CINDERBARK_FENCE)
+                .fenceGate(ModBlocks.CINDERBARK_FENCE_GATE)
+                .pressurePlate(ModBlocks.CINDERBARK_PRESSURE_PLATE)
+                .button(ModBlocks.CINDERBARK_BUTTON);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.CINDERBARK_DOOR);
+        blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.CINDERBARK_TRAPDOOR);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SPICEWOOD_PLANKS)
+                .stairs(ModBlocks.SPICEWOOD_STAIRS)
+                .slab(ModBlocks.SPICEWOOD_SLAB)
+                .fence(ModBlocks.SPICEWOOD_FENCE)
+                .fenceGate(ModBlocks.SPICEWOOD_FENCE_GATE)
+                .pressurePlate(ModBlocks.SPICEWOOD_PRESSURE_PLATE)
+                .button(ModBlocks.SPICEWOOD_BUTTON);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.SPICEWOOD_DOOR);
+        blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.SPICEWOOD_TRAPDOOR);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.STRIPPED_SPICEWOOD_PLANKS)
+                .stairs(ModBlocks.STRIPPED_SPICEWOOD_STAIRS)
+                .slab(ModBlocks.STRIPPED_SPICEWOOD_SLAB)
+                .fence(ModBlocks.STRIPPED_SPICEWOOD_FENCE)
+                .fenceGate(ModBlocks.STRIPPED_SPICEWOOD_FENCE_GATE)
+                .pressurePlate(ModBlocks.STRIPPED_SPICEWOOD_PRESSURE_PLATE)
+                .button(ModBlocks.STRIPPED_SPICEWOOD_BUTTON);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.STRIPPED_SPICEWOOD_DOOR);
+        blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.STRIPPED_SPICEWOOD_TRAPDOOR);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SPICE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PACKED_SPICE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SPICE_BRICKS);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SPICE_BRICKS)
+                .stairs(ModBlocks.SPICE_BRICK_STAIRS)
+                .slab(ModBlocks.SPICE_BRICK_SLAB)
+                .wall(ModBlocks.SPICE_BRICK_WALL);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FERROUS_DIRT);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COARSE_FERROUS_DIRT);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FERROUS_STONE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FERROUS_COBBLESTONE);
 
-        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.FERROUS_SHORT_GRASS,
-                BlockStateModelGenerator.TintType.NOT_TINTED);
-
+        // BEAM BLOCK MODELS
         generateWoodBeams(blockStateModelGenerator, "cinderbark", ModBlocks.CINDERBARK_BEAM);
         generateWoodBeams(blockStateModelGenerator, "stripped_cinderbark", ModBlocks.STRIPPED_CINDERBARK_BEAM);
         generateWoodBeams(blockStateModelGenerator, "spicewood", ModBlocks.SPICEWOOD_BEAM);
@@ -207,31 +246,28 @@ public class ModModelProvider extends FabricModelProvider {
         generateWoodBeams(blockStateModelGenerator, "warped", ModBlocks.WARPED_BEAM);
         generateWoodBeams(blockStateModelGenerator, "stripped_warped", ModBlocks.STRIPPED_WARPED_BEAM);
 
-       generateScrap(blockStateModelGenerator, "copper", ModBlocks.COPPER_SCRAP);
-        generateScrap(blockStateModelGenerator, "gold", ModBlocks.GOLD_SCRAP);
+//       generateScrap(blockStateModelGenerator, "copper", ModBlocks.COPPER_SCRAP);
+//        generateScrap(blockStateModelGenerator, "gold", ModBlocks.GOLD_SCRAP);
     }
 
-    // Creates Beam Item Model which points towards block/template_beam_inventory as its parent
+    // Beam item/items files
     public void registerBeamItem(ItemModelGenerator generator, String woodName, Block beamBlock) {
-        TextureMap textures = new TextureMap()
-                .put(TextureKey.TEXTURE, Identifier.of("palpatch", "block/" + woodName + "_beam"));
-        TEMPLATE_BEAM_INVENTORY.upload(ModelIds.getItemModelId(beamBlock.asItem()), textures, generator.writer);
+
+        Identifier inventoryModelId = Identifier.of("palpatch", "block/" + woodName + "_beam_inventory");
+
+        Model beamItemModel = new Model(Optional.of(inventoryModelId), Optional.empty());
+
+        generator.register(beamBlock.asItem(), beamItemModel);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.SPICEWOOD_POWDER, Models.GENERATED);
         itemModelGenerator.register(ModItems.SPICEWOOD_STICK, Models.GENERATED);
-        itemModelGenerator.register(ModBlocks.SOOTWEED.asItem(), Models.GENERATED);
 
-        GENERATED.upload(getItemModelId(ModBlocks.CINDERBARK_SAPLING.asItem()), layer0(ModBlocks.CINDERBARK_SAPLING), itemModelGenerator.writer);
+        itemModelGenerator.register(ModBlocks.FERROUS_PETALS.asItem(), Models.GENERATED);
 
-        GENERATED.upload(getItemModelId(ModBlocks.FERROUS_SHORT_GRASS.asItem()), layer0(ModBlocks.FERROUS_SHORT_GRASS), itemModelGenerator.writer);
-
-        itemModelGenerator.register(ModBlocks.CINDERBARK_DOOR.asItem(), Models.GENERATED);
-        itemModelGenerator.register(ModBlocks.SPICEWOOD_DOOR.asItem(), Models.GENERATED);
-        itemModelGenerator.register(ModBlocks.STRIPPED_SPICEWOOD_DOOR.asItem(), Models.GENERATED);
-
+        // BEAM ITEM REGISTRATION
         registerBeamItem(itemModelGenerator, "cinderbark", ModBlocks.CINDERBARK_BEAM);
         registerBeamItem(itemModelGenerator, "stripped_cinderbark", ModBlocks.STRIPPED_CINDERBARK_BEAM);
         registerBeamItem(itemModelGenerator, "spicewood", ModBlocks.SPICEWOOD_BEAM);
@@ -261,6 +297,4 @@ public class ModModelProvider extends FabricModelProvider {
         registerBeamItem(itemModelGenerator, "stripped_warped", ModBlocks.STRIPPED_WARPED_BEAM);
 
     }
-
-
 }

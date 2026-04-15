@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "palpatch:block/spice_brick_slab"
+    },
+    "type=double": {
+      "model": "palpatch:block/spice_bricks"
+    },
+    "type=top": {
+      "model": "palpatch:block/spice_brick_slab_top"
+    }
+  }
+}

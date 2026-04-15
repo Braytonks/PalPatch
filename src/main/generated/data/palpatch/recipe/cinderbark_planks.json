@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "tag": "palpatch:cinderbark_logs"
-    }
+    "#palpatch:cinderbark_logs"
   ],
   "result": {
     "count": 4,

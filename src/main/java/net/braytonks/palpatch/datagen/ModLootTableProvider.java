@@ -85,7 +85,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.FERROUS_STONE);
         addDrop(ModBlocks.FERROUS_COBBLESTONE);
 
-        this.addDrop(ModBlocks.IRON_SCRAP, block -> dropsWithCount(block, Items.RAW_IRON));;
+//        this.addDrop(ModBlocks.IRON_SCRAP, block -> dropsWithCount(block, Items.RAW_IRON));;
     }
 
     public LootTable.Builder dropsWithCount(Block block, Item drop) {

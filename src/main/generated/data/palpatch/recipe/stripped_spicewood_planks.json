@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "palpatch:stripped_spicewood_block"
-    }
+    "palpatch:stripped_spicewood_block"
   ],
   "result": {
     "count": 2,

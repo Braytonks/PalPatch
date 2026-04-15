@@ -52,7 +52,7 @@ public class BeamBlock extends Block {
         BeamPos hPos = calculatePos(ctx, faceAxis, false);
         Direction.Axis axis;
 
-        if (clickedState.isOf(this) && faceAxis == clickedState.get(AXIS)) {
+        if (clickedState.getBlock() instanceof BeamBlock && faceAxis == clickedState.get(AXIS)) {
             axis = clickedState.get(AXIS);
             vPos = clickedState.get(VERT_POS);
             hPos = clickedState.get(HORIZ_POS);

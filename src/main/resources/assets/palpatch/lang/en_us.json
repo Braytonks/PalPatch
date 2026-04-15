@@ -3,8 +3,6 @@
 
   "item.palpatch.spicewood_stick": "Spicewood",
   "item.palpatch.spicewood_powder": "Spicewood Powder",
-  "item.palpatch.spicewood_sapling": "Spicewood Sapling",
-  "item.palpatch.cinderbark_sapling": "Cinderbark Sapling",
 
   "block.palpatch.cinderbark_log": "Cinderbark Log",
   "block.palpatch.cinderbark_wood": "Cinderbark Wood",
@@ -91,5 +89,12 @@
   "block.palpatch.copper_scrap": "Copper Scrap",
   "block.palpatch.gold_scrap": "Gold Scrap",
 
-  "block.palpatch.magic_block": "Magic Block"
+  "block.palpatch.magic_block": "Magic Block",
+
+  "tag.block.palpatch.cinderbark_logs": "Cinderbark Logs",
+  "tag.block.palpatch.spicewood_blocks": "Spicewood Blocks",
+  "tag.block.palpatch.ferrous_plantable_on": "Plantable on Ferrous Blocks",
+  "tag.item.palpatch.cinderbark_logs": "Cinderbark Logs",
+  "tag.item.palpatch.spicewood_blocks": "Spicewood Blocks",
+  "tag.item.palpatch.ferrous_plantable_on": "Plantable on Ferrous Blocks"
 }

@@ -92,8 +92,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SPICE_BRICK_WALL)
                 .add(ModBlocks.PACKED_SPICE)
                 .add(ModBlocks.FERROUS_STONE)
-                .add(ModBlocks.FERROUS_COBBLESTONE)
-                .add(ModBlocks.IRON_SCRAP);
+                .add(ModBlocks.FERROUS_COBBLESTONE);
+//                .add(ModBlocks.IRON_SCRAP);
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .addTag(ModTags.Blocks.CINDERBARK_LOGS)

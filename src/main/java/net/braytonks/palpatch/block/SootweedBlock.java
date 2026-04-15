@@ -3,7 +3,7 @@ package net.braytonks.palpatch.block;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.VineBlock;
-import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
@@ -13,8 +13,8 @@ import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
-import net.minecraft.util.ItemActionResult;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
@@ -40,16 +40,17 @@ public class SootweedBlock extends VineBlock {
     }
 
     @Override
-    protected ItemActionResult onUseWithItem(ItemStack stack, BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+    protected ActionResult onUseWithItem(ItemStack stack, BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (stack.isOf(Items.SHEARS) && state.get(CAN_GROW)) {
             if (!world.isClient) {
                 world.setBlockState(pos, state.with(CAN_GROW, false), Block.NOTIFY_LISTENERS);
                 world.playSound(null,pos, SoundEvents.ENTITY_SHEEP_SHEAR, SoundCategory.BLOCKS,1f,1f);
-                stack.damage(1,player, LivingEntity.getSlotForHand(hand));
+                stack.damage(1, player, player.getStackInHand(hand).equals(stack) ?
+                        (hand == Hand.MAIN_HAND ? EquipmentSlot.MAINHAND : EquipmentSlot.OFFHAND) : EquipmentSlot.MAINHAND);
             }
-            return ItemActionResult.success(world.isClient);
+            return ActionResult.SUCCESS;
         }
-        return ItemActionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+        return super.onUseWithItem(stack, state, world, pos, player, hand, hit);
     }
 
     @Override
